@@ -2,12 +2,14 @@ package
 {
 	import net.flashpunk.World;
 	
+	
 	import Dot;
 	public class TwizaWorld extends World
 	{
 	
 		private var dots:Array;
-		public var currentDot:Dot; 
+		public var currentDot:Dot;
+		public var player:Player;
 		public function TwizaWorld()
 		{
 
@@ -34,6 +36,8 @@ package
 			}
 			currentDot = dots[0];
 			currentDot.importantDot();
+			player = new Player;
+			add(player);
 			this.nextDot()
 			this.nextDot()
 
@@ -41,11 +45,6 @@ package
 		}
 
 		
-		override public function update():void
-		{
-			//check if we clicked a dot, then go to the next dot
-			//if we get a false from next dot, they've won.
-		}		
 		
 		
 		public function nextDot():Boolean {

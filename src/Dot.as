@@ -9,6 +9,7 @@ package
 		{
 			
 			graphic = Image.createCircle(10);
+			setHitbox(200, 20);
 			//(Image)(graphic).scale = 0.1;
 			this.x = xLoc;
 			this.y = yLoc;
