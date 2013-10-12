@@ -12,6 +12,7 @@ package
 			//(Image)(graphic).scale = 0.1;
 			this.x = xLoc;
 			this.y = yLoc;
+			trace("Dot created at " + this.x + " , " + this.y);
 		}
 		
 		public function importantDot():void {

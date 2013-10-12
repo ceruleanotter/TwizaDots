@@ -10,7 +10,8 @@ package
 		public var currentDot:Dot; 
 		public function TwizaWorld()
 		{
-			var d1:Dot = new Dot(20, 20);
+
+			/*var d1:Dot = new Dot(20, 20);
 			var d2:Dot = new Dot(100, 20);			
 			var d3:Dot = new Dot(100, 100);
 			var d4:Dot = new Dot(20, 100);	
@@ -18,16 +19,27 @@ package
 			add(d1);
 			add(d2);
 			add(d3);
-			add(d4);
+			add(d4);*/
 			
-			dots = new Array(d1, d2, d3, d4);
-			currentDot = d1;
+			//dots = new Array(d1, d2, d3, d4);
+			GameConstants.initalizeDots(this);
+		}
+		
+		public function continueTwizaInit(dotarr:Array):void {
+			dots = dotarr;
+			trace(dots);
+			trace ("IS DOTS");
+			for each (var d:Dot in dots) {
+				add(d);
+			}
+			currentDot = dots[0];
 			currentDot.importantDot();
 			this.nextDot()
 			this.nextDot()
 
 			//make an array of dots
 		}
+
 		
 		override public function update():void
 		{

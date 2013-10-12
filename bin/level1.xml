@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+<dots>
+	<dot>
+		<x>20</x>
+		<y>30</y>
+	</dot>
+	<dot>
+		<x>100</x>
+		<y>20</y>
+	</dot>
+	<dot>
+		<x>100</x>
+		<y>100</y>
+	</dot>
+	<dot>
+		<x>20</x>
+		<y>100</y>
+	</dot>	
+</dots>
+</data>
